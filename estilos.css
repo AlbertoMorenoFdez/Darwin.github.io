@@ -79,6 +79,17 @@ h1 {
 #caja {
     flex-grow: 1;
 }
+.image-popup {
+    display: none;
+  }
+  
+  .image-link {
+    display: inline-block;
+  }
+  
+  .image-link:active .image-popup {
+    display: block;
+  }
 
 
 li {
