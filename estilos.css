@@ -15,8 +15,9 @@ h1 {
 .contenido {
     padding: 5px;
 }
-#encabezado2{
-   padding-right: 10px;
+
+#encabezado2 {
+    padding-right: 10px;
     text-align: justify;
 }
 
@@ -79,17 +80,18 @@ h1 {
 #caja {
     flex-grow: 1;
 }
+
 .image-popup {
     display: none;
-  }
-  
-  .image-link {
+}
+
+.image-link {
     display: inline-block;
-  }
-  
-  .image-link:active .image-popup {
+}
+
+.image-link:active .image-popup {
     display: block;
-  }
+}
 
 
 li {
