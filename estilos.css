@@ -87,7 +87,7 @@ h1 {
 }
 
 .image-link {
-    display: inline-block;
+    display: inline;
     width: 900px;
     height: auto;
 
