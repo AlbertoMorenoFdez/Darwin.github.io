@@ -4,12 +4,14 @@ body {
 }
 
 h1 {
-    font-family:Calibri;
+    font-family: Calibri;
     font-style: italic;
     font-size: 70px;
     color: black;
     text-align: center;
-    text-decoration: underline;
+    text-decoration: underline overline;
+    text-transform: capitalize;
+    text-shadow: 5px 5px 10px grey;
 
 }
 
@@ -45,7 +47,7 @@ h1 {
 
 @media screen and (orientation:landscape) {
     .portafoto {
-        max-width: 1600px;
+        max-width: 1920px;
         max-height: 1280px;
     }
 }
@@ -97,6 +99,34 @@ h1 {
     display: block;
 }
 
+p::first-letter {
+    font-size: large;
+    font-style: italic;
+    color: darkred;
+
+}
+
+p:hover {
+    background-color: darkgrey;
+}
+
+p {
+    text-align: justify;
+}
+
+a:link,
+a:visited {
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+a:hover {
+    color: red;
+}
+
+article p::first-line {
+    font-weight: bold;
+}
 
 li {
     /* estilo del boton*/
