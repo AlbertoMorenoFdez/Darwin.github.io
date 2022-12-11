@@ -1,22 +1,30 @@
+/* Colocamos una imagen para el background de todo el body, en este caso una imagen */
 body {
     background-image: url(https://github.com/AlbertoMorenoFdez/publico/blob/main/Trabajo%20fin%20primer%20trimestre/imagenbackground.jpg?raw=true);
 
 }
 
+/* Trabajamos el estilo del titulo */
 h1 {
+    background-image: linear-gradient(white, lightgrey, grey);
     font-family: Calibri;
     font-style: italic;
     font-size: 70px;
     color: black;
     text-align: center;
-    text-decoration: underline overline;
+    text-decoration: underline;
     text-transform: capitalize;
     text-shadow: 5px 5px 10px grey;
 
 }
 
+/* Estilo para todos los párrafos*/
+p {
+    text-align: justify;
+}
+
 .contenido {
-    padding: 5px;
+    padding: 20px;
 }
 
 #encabezado2 {
@@ -24,6 +32,7 @@ h1 {
     text-align: justify;
 }
 
+/* Trabajamos las caracteristicas del portafoto y de la foto de la pagina 1, foto vertical, para que asi se ajuste ajuste al contenido */
 @media screen and (orientation:portrait) {
     .portafotoDarwin {
         max-width: 800;
@@ -41,10 +50,11 @@ h1 {
 
 .fotoDarwin {
     width: 100%;
-    height: 100%;
+    height: auto;
 
 }
 
+/* Trabajamos las caracteristicas del portafoto y de la foto de la pagina 2, foto horizontal, para que asi se ajuste ajuste al contenido */
 @media screen and (orientation:landscape) {
     .portafoto {
         max-width: 1920px;
@@ -61,11 +71,12 @@ h1 {
 
 .fotoTeoria {
     width: 100%;
-    height: 100%;
+    height: auto;
 
 
 }
 
+/* Estilo para que el texto y la imagen de la pagina 1 queden formando 2 columnas */
 #encabezado1 {
     display: flex;
     flex-direction: row-reverse;
@@ -84,6 +95,7 @@ h1 {
     flex-grow: 1;
 }
 
+/* Aqui trabajamos el estilo para que la imagen del arbol fologenetico aparezca cuando se pinche sobre el enlace que hay en el texto de la pagina 2 */
 .image-popup {
     display: none;
 }
@@ -99,21 +111,27 @@ h1 {
     display: block;
 }
 
+/* Trabajamos las pseudoclases y pseudoelementos presentes en las dos paginas */
+
+/* La primera letra de cada párrafo sera mas grande que el texto y además ira coloreada*/
 p::first-letter {
     font-size: large;
     font-style: italic;
     color: darkred;
-
 }
 
+/* El primer elemento de la segunda página aparecerá en negrita */
+
+article p::first-line {
+    font-weight: bold;
+}
+
+/* Al pasar el rato sobre cada párrafo este tendra un background mas oscuro*/
 p:hover {
     background-color: darkgrey;
 }
 
-p {
-    text-align: justify;
-}
-
+/* Asi conseguimos que el texto del link sea de color morado y se torne rojo al pasar el ratón sobre el */
 a:link,
 a:visited {
     color: rebeccapurple;
@@ -124,17 +142,41 @@ a:hover {
     color: red;
 }
 
-article p::first-line {
-    font-weight: bold;
+/* Trabajamos las caracteristicas del contenedor de las minifotos */
+
+.miniportafotos {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-between;
+
 }
 
+#miniportafoto {
+    width: 320px;
+    height: 320px;
+    border-color: black;
+    border-style: solid;
+
+
+}
+
+.minifoto {
+
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+
+}
+
+/* Creamos la botonera para pasar de una página a la otra*/
 li {
     /* estilo del boton*/
     display: inline-block;
     width: 85%;
     height: 89%;
     background-color: lightgrey;
-    border-radius: 5px;
+    border-radius: 12px;
     margin: 5px;
     border-width: 0px 2px 2px 0px;
     border-color: gray;

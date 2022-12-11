@@ -36,29 +36,33 @@ avif: cuadrado
 
 -->
 
-                <!-- Imagenes Grandes Verticales -->
-                <source media="(orientation: portrait) and (min-width:601px)" srcset="Teoria_evolucion.avif"
-                    type="image/avif">
-                <source media="(orientation: portrait) and (min-width:601px)" srcset="Teoria_evolucion.webp"
-                    type="image/webp">
-                <source media="(orientation: portrait) and (min-width:601px)" srcset="Teoria_evolucion.jpg"
+                <!-- Imagenes Grandes Horizontales -->
+                <source media="(orientation: landscape) and (min-width:1500px)" srcset="Teoria_evolucion.jpg"
                     type="image/jpg">
-                <!-- Imagenes Medianas Verticales -->
-                <source media="(orientation: portrait) and (min-width:401px)" srcset="Teoria_evolucion-medium.avif"
+                <source media="(orientation: landscape) and (min-width:1500px)" srcset="Teoria_evolucion.avif"
                     type="image/avif">
-                <source media="(orientation: portrait) and (min-width:401px)" srcset="Teoria_evolucion-medium.webp"
+                <source media="(orientation: landscape) and (min-width:1500px)" srcset="Teoria_evolucion.webp"
                     type="image/webp">
-                <source media="(orientation: portrait) and (min-width:401px)" srcset="Teoria_evolucion-medium.jpg"
-                    type="image/jpg">
-                <!-- Imagenes Pequeñas Verticales -->
-                <source media="(orientation: portrait) and (max-width:400px)" srcset="Teoria_evolucion-small.avif"
-                    type="image/avif">
-                <source media="(orientation: portrait) and (max-width:400px)" srcset="Teoria_evolucion-small.webp"
-                    type="image/webp">
-                <source media="(orientation: portrait) and (max-width:400px)" srcset="Teoria_evolucion-small.jpg"
-                    type="image/jpg">
 
-                <img class="fotoTeoria" src="Teoria_evolucion.jpg" title="Evolución del hombre" alt="Foto de la Teoría de la Evolución">
+                <!-- Imagenes Medianas Horizontales -->
+                <source media="(orientation: landscape) and (min-width:901px)" srcset="Teoria_evolucion-medium.jpg"
+                    type="image/jpg">
+                <source media="(orientation: landscape) and (min-width:901px)" srcset="Teoria_evolucion-medium.avif"
+                    type="image/avif">
+                <source media="(orientation: landscape) and (min-width:901px)" srcset="Teoria_evolucion-medium.webp"
+                    type="image/webp">
+
+                <!-- Imagenes Pequeñas Horizontales -->
+                <source media="(orientation: landscape) and (max-width:901px)" srcset="Teoria_evolucion-small.jpg"
+                    type="image/jpg">
+                <source media="(orientation: landscape) and (max-width:901px)" srcset="Teoria_evolucion-small.avif"
+                    type="image/avif">
+                <source media="(orientation: landscape) and (max-width:901px)" srcset="Teoria_evolucion-small.webp"
+                    type="image/webp">
+
+
+                <img class="fotoTeoria" src="Teoria_evolucion.jpg" title="Evolución del hombre"
+                    alt="Foto de la Teoría de la Evolución">
             </picture>
         </div>
         <div>
@@ -109,7 +113,30 @@ avif: cuadrado
                 cantidad de
                 evidencia empírica.</p>
         </div>
-        <nav >
+        <!--   Aqui vamos a colocar todas las fotos en tamaño pequeño y sobre las que aplicaremos distintas tecnicas de tratado -->
+        <div class="miniportafotos">
+            <p id="miniportafoto">
+                <img class="minifoto" src="arco darwin.jpg"
+                    title="Imagen de la formación geológica que recibe el nombre del científico"
+                    alt="Fotografía del Arco de Darwin">
+            </p>
+            <p id="miniportafoto">
+                <img class="minifoto" src="tortuga galapago.jpg" title="Tortuga de las Galápagos"
+                    alt="Fotografía de una tortuga gigante">
+            </p>
+            <p id="miniportafoto">
+                <img class="minifoto" src="pinzones.jpg" title="Dibujo de los pinzones, por Darwin"
+                    alt="Imagen de libro de pinzones">
+            </p>
+            <p id="miniportafoto">
+                <img class="minifoto" src="iguana.jpg" title="Iguana marina de las Galápagos"
+                    alt="Fotografia iguana marina">
+            </p>
+
+
+        </div>
+        <!-- Aquí creamos los botones que enlazarán una página con la otra -->
+        <nav>
 
             <ul>
                 <a href="./pagina 1.html">
